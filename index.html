@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="control-panel">
+        <div class="reset-btn">Reset</div>
+        <div class="info-div"></div>
+        <div class="title">Control Panel</div>
+        <form class="controls" action="">
+          <div class="main-control">
+            <div class="flexbox-checkbox-div">
+              <label for="flexbox-checkbox">Flexbox</label>
+              <input
+                type="checkbox"
+                id="flexbox-checkbox"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="flex-direction-options-div">
+              <label for="flex-direction-options">flex-direction</label>
+              <select name="" id="flex-direction-options" autocomplete="off">
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+              </select>
+            </div>
+            <div class="child-count-div">
+              <label for="child-count">child count</label>
+              <select name="" id="child-count" autocomplete="off">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="random-hw-div">
+              <label for="random-hw-checkbox"
+                >Random Height width children</label
+              >
+              <input
+                type="checkbox"
+                id="random-hw-checkbox"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="random-fz-div">
+              <label for="random-fz-checkbox">Random font-size children</label>
+              <input
+                type="checkbox"
+                id="random-fz-checkbox"
+                required
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <div class="parent-control">
+            <div class="justify-content-div">
+              <label for="justify-content-options">justify-content</label>
+              <select name="" id="justify-content-options" autocomplete="off">
+                <option value="" selected disabled>select</option>
+                <option value="start">flex-start</option>
+                <option value="end">flex-end</option>
+                <option value="center">flex-center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+              </select>
+            </div>
+            <div class="align-items-div">
+              <label for="align-items-options">align-items</label>
+              <select name="" id="align-items-options" autocomplete="off">
+                <option value="" selected disabled>select</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="stretch">stretch</option>
+                <option value="baseline">baseline</option>
+              </select>
+            </div>
+            <div class="flex-wrap-div">
+              <label for="flex-wrap-options">flex-wrap</label>
+              <select name="" id="flex-wrap-options" autocomplete="off">
+                <option value="" selected disabled>select</option>
+                <option value="nowrap">nowrap</option>
+                <option value="wrap">wrap</option>
+                <option value="wrap-reverse">wrap-reverse</option>
+              </select>
+            </div>
+            <div class="align-content-div">
+              <label for="align-content-options">align-content</label>
+              <select name="" id="align-content-options" autocomplete="off">
+                <option value="" selected disabled>select</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="stretch">stretch</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+              </select>
+            </div>
+            <div class="gap-div">
+              <label for="gap-prop">gap</label>
+              <input
+                type="text"
+                placeholder="0"
+                autocomplete="off"
+                id="gap-prop"
+              />
+            </div>
+          </div>
+          <div class="child-control">
+            <div class="child-select-div">
+              <label for="child-select">Select child</label>
+              <select name="" id="child-select" autocomplete="off"></select>
+            </div>
+            <div class="align-self-div">
+              <label for="align-self-options">align-self</label>
+              <select name="" id="align-self-options" autocomplete="off">
+                <option value="" selected disabled>select</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="stretch">stretch</option>
+                <option value="baseline">baseline</option>
+                <option value="auto">auto</option>
+              </select>
+            </div>
+            <div class="child-order-div">
+              <label for="child-order">order</label>
+              <select name="" id="child-order" autocomplete="off">
+                <option value="" selected disabled>select</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="flex-flow-div">
+              <div class="flex-grow-div">
+                <label for="flex-grow-id">flex-grow</label>
+                <input
+                  type="text"
+                  id="flex-grow-id"
+                  placeholder="0"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="flex-shrink-div">
+                <label for="flex-shrink-id">flex-shrink</label>
+                <input
+                  type="text"
+                  id="flex-shrink-id"
+                  placeholder="1"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="flex-basis-div">
+                <label for="flex-basis-id">flex-basis</label>
+                <input
+                  type="text"
+                  id="flex-basis-id"
+                  placeholder="auto"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- <button onclick="updateAll(event)">update</button> -->
+        </form>
+      </div>
+      <div class="output-area">
+        <div class="output-parent"></div>
+        <div class="axis1"></div>
+        <div class="axis2"></div>
+        <div class="show-child-info">
+          <div class="width-info"></div>
+          <div class="height-info"></div>
+          <div class="align-self-info"></div>
+          <div class="flex-grow-info"></div>
+          <div class="flex-basis-info"></div>
+          <div class="flex-shrink-info"></div>
+          <div class="order-info"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
